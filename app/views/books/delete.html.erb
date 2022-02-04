@@ -1,0 +1,5 @@
+<h1>Delete Book</h1>
+<%= form_for(@book, :method => 'delete') do |form| %>
+<%= link_to 'Delete', @book, method: :delete, data: { confirm: 'This cannot be undone. Are you sure?' } %> |
+<%= link_to 'Back', books_path %>
+<% end %>
